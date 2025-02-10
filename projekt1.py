@@ -62,3 +62,18 @@ print(
     f"The sum of all the numbers is {numeric_sum}"
 )
 print("-" * 40)
+
+# Histogram délek slov
+word_lengths = {}
+for word in words:
+    cleaned_word = word.strip(".,!?")  # Odstranění interpunkce
+    length = len(cleaned_word)
+    if length in word_lengths:
+        word_lengths[length] += 1
+    else:
+        word_lengths[length] = 1
+
+print("LEN|  OCCURENCES  |NR.")
+print("-" * 40)
+for length, count in sorted(word_lengths.items()):
+    print(f"{length:3}|{'*' * count:<14}|{count}")
