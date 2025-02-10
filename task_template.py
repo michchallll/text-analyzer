@@ -1,5 +1,5 @@
 '''
-author =
+author = Michael Kubát
 '''
 TEXTS = ['''
 Situated about 10 miles west of Kemmerer,
