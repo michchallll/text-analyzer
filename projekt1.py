@@ -76,4 +76,4 @@ for word in words:
 print("LEN|  OCCURENCES  |NR.")
 print("-" * 40)
 for length, count in sorted(word_lengths.items()):
-    print(f"{length:3}|{'*' * count:<14}|{count}")
+    print(f"{length:3}|{'*' * min(count, 14):<14}|{count}")
